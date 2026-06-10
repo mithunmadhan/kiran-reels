@@ -10,7 +10,7 @@ COPY package*.json ./
 RUN npm install
 
 # Install Python dependencies required by veo_generator.py
-RUN pip3 install google-genai requests --break-system-packages
+RUN pip3 install google-genai requests
 
 # Copy the rest of the application code
 COPY . .
